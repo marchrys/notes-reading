@@ -1,0 +1,102 @@
+@font-face {
+    font-family: quicksand;
+    src: url('../fonts/quicksand/Quicksand-VariableFont_wght.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: musiqwik;
+    src: url('../fonts/musiqwik/Musiqwik-rvL8.ttf') format('truetype');
+}
+
+:root {
+    --screen-bg-color: #EAF8BF;
+    --main-bg-color: #006992;
+    --danger-color: red;
+    background-color: var(--screen-bg-color);
+    font-family: quicksand;
+    font-size: 17px;
+}
+
+.nav-title {
+  font-size: 1.7rem !important;
+}
+
+/* Tabs styles */
+nav ul li a {
+  font-size: 1rem !important;
+}
+
+.nav-content, a.btn, div.collapsible-header{
+    background-color: var(--main-bg-color);
+    color: white;
+}
+
+div.collapsible-body {
+  background-color: white;
+}
+
+.nav-title {
+    margin-left : 20px;
+}
+
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 1.3rem !important;
+}
+
+section{
+    margin-top: 0.5rem;
+}
+
+.musiqwik{
+    font-family: musiqwik;
+    font-size: 60px;
+}
+
+a.action-btn{
+    margin: 10px;
+}
+
+div.input-field {
+  margin-bottom: 50px !important;
+}
+
+/* Selects text color */
+.dropdown-content li > a, .dropdown-content li > span, .input-field input[type=text], .input-field input[type=text]:focus {
+    color: var(--main-bg-color) !important;
+    padding: 25px !important;
+}
+
+/* Selects bottom border color */
+/* label underline focus color */
+.input-field input[type=text]:focus {
+	  border-bottom: 1px solid var(--main-bg-color) !important;
+    box-shadow: 0 1px 0 0 var(--main-bg-color) !important;
+}
+
+.settings .dropdown-content li > a, .dropdown-content li > span {
+    font-family: "musiqwik";
+    font-size: 2em !important;
+}
+
+.settings .input-field input[type=text] {
+    font-family: "musiqwik";
+    font-size: 2em !important;
+}
+
+/* Selects bottom border color */
+/* label underline focus color */
+.input-field input[type=text], .input-field input[type=text]:focus {
+    padding: 20px 0 20px 0 !important;
+    line-height: 2em !important;
+	  border-bottom: 1px solid var(--main-bg-color) !important;
+    box-shadow: 0 1px 0 0 var(--main-bg-color) !important;
+}
+
+.toasts {
+  background-color: var(--danger-color) !important;
+}
