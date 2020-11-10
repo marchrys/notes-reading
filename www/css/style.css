@@ -8,6 +8,16 @@
     src: url('../fonts/musiqwik/Musiqwik-rvL8.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: stafcpe;
+    src: url('../fonts/stafcpe/stafcpe.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: lassus;
+    src: url('../fonts/lassus/LASSUS.TTF') format('truetype');
+}
+
 :root {
     --screen-bg-color: #EAF8BF;
     --main-bg-color: #006992;
@@ -54,7 +64,19 @@ section{
 
 .musiqwik{
     font-family: musiqwik;
-    font-size: 60px;
+    font-size: 70px;
+}
+
+.stafcpe {
+  font-family: stafcpe;
+  font-size: 50px;
+  font-weight: 100;
+  margin: 30px 0;
+}
+
+.lassus {
+  font-family: lassus;
+  font-size: 60px;
 }
 
 a.action-btn{
@@ -79,20 +101,21 @@ div.input-field {
 }
 
 .settings .dropdown-content li > a, .dropdown-content li > span {
-    font-family: "musiqwik";
+    font-family: "stafcpe";
     font-size: 2em !important;
+    line-height: 2em !important;
 }
 
 .settings .input-field input[type=text] {
-    font-family: "musiqwik";
+    font-family: "stafcpe";
     font-size: 2em !important;
 }
 
 /* Selects bottom border color */
 /* label underline focus color */
 .input-field input[type=text], .input-field input[type=text]:focus {
-    padding: 20px 0 20px 0 !important;
-    line-height: 2em !important;
+    padding: 40px 0 40px 0 !important;
+    line-height: 4em !important;
 	  border-bottom: 1px solid var(--main-bg-color) !important;
     box-shadow: 0 1px 0 0 var(--main-bg-color) !important;
 }

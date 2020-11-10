@@ -1,62 +1,62 @@
 let notes = [
     {
         id: 1,
-        musNotation: "&#112;"
+        musNotation: "n"
     },
     {
         id: 2,
-        musNotation: "&#113;"
+        musNotation: "m"
     },
     {
         id: 3,
-        musNotation: "&#114;"
+        musNotation: "a"
     },
     {
         id: 4,
-        musNotation: "&#115;"
+        musNotation: "s"
     },
     {
         id: 5,
-        musNotation: "&#116;"
+        musNotation: "d"
     },
     {
         id: 6,
-        musNotation: "&#117;"
+        musNotation: "f"
     },
     {
         id: 7,
-        musNotation: "&#118;"
+        musNotation: "g"
     },
     {
         id: 8,
-        musNotation: "&#119;"
+        musNotation: "h"
     },
     {
         id: 9,
-        musNotation: "&#120;"
+        musNotation: "j"
     },
     {
         id: 10,
-        musNotation: "&#121;"
+        musNotation: "q"
     },
     {
         id: 11,
-        musNotation: "&#122;"
+        musNotation: "w"
     },
     {
         id: 12,
-        musNotation: "&#123;"
+        musNotation: "e"
     },
     {
         id: 13,
-        musNotation: "&#124;"
+        musNotation: "r"
     },
     {
         id: 14,
-        musNotation: "&#125;"
+        musNotation: "t"
     },
     {
         id: 15,
-        musNotation: "&#126;"
+        musNotation: "y"
     }
 ];

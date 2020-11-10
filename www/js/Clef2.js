@@ -31,7 +31,7 @@ class Clef {
  
         training.innerHTML += 
         '<section class="' + this.clefData.containerDiv.id + '-score"></section>' +
-        '<section class="musiqwik"></section>' + 
+        '<section class="stafcpe"></section>' + 
         '<section class="' + this.clefData.containerDiv.id + '-feedback">&nbsp;</section>' +
         '<section class="buttons-container"></section>' +
         '<a class="waves-effect waves-light btn ' + this.clefData.containerDiv.id + '-new-question-btn">Nouvelle question</a>';
@@ -70,13 +70,13 @@ class Clef {
 
         notes.forEach((note, index) => {
           let noteOption = document.createElement('option');
-          noteOption.innerHTML = this.clefData.musNotation + note.musNotation + musNotation.barline;
+          noteOption.innerHTML = this.clefData.musNotation + note.musNotation + musNotation.space + musNotation.barline;
           noteOption.value = note.id;
           lowestNoteSelect.appendChild(noteOption);
         });
         notes.forEach((note, index) => {
           let noteOption = document.createElement('option');
-          noteOption.innerHTML = this.clefData.musNotation + note.musNotation + musNotation.barline;
+          noteOption.innerHTML = this.clefData.musNotation + note.musNotation + musNotation.space + musNotation.barline;
           noteOption.value = note.id;
           highestNoteSelect.appendChild(noteOption);
         });
@@ -117,7 +117,7 @@ class Clef {
     displayQuestion(){
         let collapsible = this.clefData.containerDiv.querySelector(".collapsible");
         let training = collapsible.querySelector(".training").querySelector(".collapsible-body");
-        let questionDiv = training.querySelector(".musiqwik");
+        let questionDiv = training.querySelector(".stafcpe");
         let feedbackDiv = document.querySelector("." + this.clefData.containerDiv.id + "-feedback");
         
         feedbackDiv.innerHTML = "";
@@ -131,7 +131,7 @@ class Clef {
 
         questionDiv.innerHTML = 
             this.clefData.musNotation + 
-            musNotation.space +
+          
             questionMusNotation +
             musNotation.space +
             musNotation.barline;

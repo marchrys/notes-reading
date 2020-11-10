@@ -1,4 +1,4 @@
 let musNotation = {
-    space: "&#61;",
-    barline: "&#33;"
+    space: "=",
+    barline: "|"
 }

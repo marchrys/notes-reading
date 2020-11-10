@@ -4,7 +4,7 @@ let clefs = [
         id : 1,
         name: "Clef de sol",
         containerDiv: "treble-clef",
-        musNotation: "&#38;",
+        musNotation: "&",
         notes: [
             {
                 id: 1,
@@ -78,7 +78,7 @@ let clefs = [
         id : 2,
         name: "Clef de fa",
         containerDiv: "bass-clef",
-        musNotation: "&#175;",
+        musNotation: "?",
         notes: [
             {
                 id: 1,
