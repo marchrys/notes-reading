@@ -68,16 +68,18 @@ class Clef {
         const lowestNoteSelect = document.getElementById(this.clefData.containerDiv.id + '-lowest-note-select');
         const highestNoteSelect = document.getElementById(this.clefData.containerDiv.id + '-highest-note-select');
 
-        notes.forEach((note, index) => {
+        const notesByOrderId = notes.sort((a, b) => (a.orderId > b.orderId) ? 1 : -1).filter(note => note.inFull);
+
+        notesByOrderId.forEach((note, index) => {
           let noteOption = document.createElement('option');
           noteOption.innerHTML = this.clefData.musNotation + note.musNotation + musNotation.space + musNotation.barline;
-          noteOption.value = note.id;
+          noteOption.value = note.orderId;
           lowestNoteSelect.appendChild(noteOption);
         });
-        notes.forEach((note, index) => {
+        notesByOrderId.forEach((note, index) => {
           let noteOption = document.createElement('option');
           noteOption.innerHTML = this.clefData.musNotation + note.musNotation + musNotation.space + musNotation.barline;
-          noteOption.value = note.id;
+          noteOption.value = note.orderId;
           highestNoteSelect.appendChild(noteOption);
         });
         
@@ -126,7 +128,7 @@ class Clef {
         if(this.questionId === 0){
             questionMusNotation = musNotation.space;
         }else{
-            questionMusNotation = findSingle(notes, this.questionId).musNotation;
+            questionMusNotation = notes.find((note) => note.orderId == this.questionId).musNotation;
         }
 
         questionDiv.innerHTML = 
@@ -171,13 +173,14 @@ class Clef {
 
         this.questionId = Math.floor(Math.random() * ((highestNoteId - lowestNoteId) + 1)) + lowestNoteId;
 
-        let note = findSingle(this.clefData.notes, this.questionId);
-        this.questionNoteNameId = note.noteNameId;
+
+        let note = notes.find((note) => note.orderId == this.questionId);
+        this.questionNoteNameId = note.nameIds[this.clefData.containerDiv.id];
 
         this.clefData.settingsAndStats.questionsNum.push({
             noteId: this.questionId,
-            levelId: parseInt(this.clefData.settingsAndStats.levelId)
         });
+        console.log(this.clefData.settingsAndStats.questionsNum.length);
 
         this.displayQuestion();
         this.storeSettingsAndStats();
