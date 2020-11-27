@@ -68,8 +68,14 @@ class Clef {
         const lowestNoteSelect = document.getElementById(this.clefData.containerDiv.id + '-lowest-note-select');
         const highestNoteSelect = document.getElementById(this.clefData.containerDiv.id + '-highest-note-select');
 
-        const notesByOrderId = notes.sort((a, b) => (a.orderId > b.orderId) ? 1 : -1).filter(note => note.inFull);
-
+        let notesByOrderId = null;
+        if(version === 'Full'){
+          notesByOrderId = notes.sort((a, b) => (a.orderId > b.orderId) ? 1 : -1);
+        }
+        else{
+          notesByOrderId = notes.sort((a, b) => (a.orderId > b.orderId) ? 1 : -1).filter(note => note.inLite);
+        }
+        
         notesByOrderId.forEach((note, index) => {
           let noteOption = document.createElement('option');
           noteOption.innerHTML = this.clefData.musNotation + note.musNotation + musNotation.space + musNotation.barline;

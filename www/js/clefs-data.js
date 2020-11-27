@@ -11,7 +11,7 @@ let clefs = [
             rightAnswers: [],
             questionsNum: []
         },
-        inFull: true,
+        inLite: true,
     },
     {
         id : 2,
@@ -24,7 +24,33 @@ let clefs = [
             rightAnswers: [],
             questionsNum: []
         },
-        inFull: true,
-    }
+        inLite: true,
+    },
+    {
+        id : 3,
+        name: "Clef d'ut 3ème ligne",
+        containerDiv: "alto_clef",
+        musNotation: "}",
+        settingsAndStats: {
+            lowestNoteId: 12,
+            highestNoteId: 16,
+            rightAnswers: [],
+            questionsNum: []
+        },
+        inLite: false,
+    },
+    {
+        id : 4,
+        name: "Clef d'ut 4ème ligne",
+        containerDiv: "tenor_clef",
+        musNotation: "{",
+        settingsAndStats: {
+            lowestNoteId: 14,
+            highestNoteId: 18,
+            rightAnswers: [],
+            questionsNum: []
+        },
+        inLite: false,
+    },
 ]
 

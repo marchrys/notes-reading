@@ -6,8 +6,10 @@ let notes = [
         nameIds: {
           treble_clef: 6,
           bass_clef: 1,
+          alto_clef: 7,
+          tenor_clef: 5,
         },
-        inFull: true,
+        inLite: true,
     },
     {
         id: 2,
@@ -16,8 +18,10 @@ let notes = [
         nameIds: {
           treble_clef: 7,
           bass_clef: 2,
+          alto_clef: 1,
+          tenor_clef: 6,
         },
-        inFull: true,
+        inLite: true,
     },
     {
         id: 3,
@@ -26,8 +30,10 @@ let notes = [
         nameIds: {
           treble_clef: 1,
           bass_clef: 3,
+          alto_clef: 2,
+          tenor_clef: 7,
         },
-        inFull: true,
+        inLite: true,
     },
     {
         id: 4,
@@ -36,8 +42,10 @@ let notes = [
         nameIds: {
           treble_clef: 2,
           bass_clef: 4,
+          alto_clef: 3,
+          tenor_clef: 1,
         },
-        inFull: true,
+        inLite: true,
     },
     {
         id: 5,
@@ -46,8 +54,10 @@ let notes = [
         nameIds: {
           treble_clef: 3,
           bass_clef: 5,
+          alto_clef: 4,
+          tenor_clef: 2,
         },
-        inFull: true,
+        inLite: true,
     },
     {
         id: 6,
@@ -56,8 +66,10 @@ let notes = [
         nameIds: {
           treble_clef: 4,
           bass_clef: 6,
+          alto_clef: 5,
+          tenor_clef: 3,
         },
-        inFull: true,
+        inLite: true,
     },
     {
         id: 7,
@@ -66,8 +78,10 @@ let notes = [
         nameIds: {
           treble_clef: 5,
           bass_clef: 7,
+          alto_clef: 6,
+          tenor_clef: 4,
         },
-        inFull: true,
+        inLite: true,
     },
     {
         id: 8,
@@ -76,8 +90,10 @@ let notes = [
         nameIds: {
           treble_clef: 6,
           bass_clef: 1,
+          alto_clef: 7,
+          tenor_clef: 5,
         },
-        inFull: true,
+        inLite: true,
     },
     {
         id: 9,
@@ -86,8 +102,10 @@ let notes = [
         nameIds: {
           treble_clef: 7,
           bass_clef: 2,
+          alto_clef: 1,
+          tenor_clef: 6,
         },
-        inFull: true,
+        inLite: true,
     },
     {
         id: 10,
@@ -96,8 +114,10 @@ let notes = [
         nameIds: {
           treble_clef: 1,
           bass_clef: 3,
+          alto_clef: 2,
+          tenor_clef: 7,
         },
-        inFull: true,
+        inLite: true,
     },
     {
         id: 11,
@@ -106,8 +126,10 @@ let notes = [
         nameIds: {
           treble_clef: 2,
           bass_clef: 4,
+          alto_clef: 3,
+          tenor_clef: 1,
         },
-        inFull: true,
+        inLite: true,
     },
     {
         id: 12,
@@ -116,8 +138,10 @@ let notes = [
         nameIds: {
           treble_clef: 3,
           bass_clef: 5,
+          alto_clef: 4,
+          tenor_clef: 2,
         },
-        inFull: true,
+        inLite: true,
     },
     {
         id: 13,
@@ -126,8 +150,10 @@ let notes = [
         nameIds: {
           treble_clef: 4,
           bass_clef: 6,
+          alto_clef: 5,
+          tenor_clef: 3,
         },
-        inFull: true,
+        inLite: true,
     },
     {
         id: 14,
@@ -136,8 +162,10 @@ let notes = [
         nameIds: {
           treble_clef: 5,
           bass_clef: 7,
+          alto_clef: 6,
+          tenor_clef: 4,
         },
-        inFull: true,
+        inLite: true,
     },
     {
         id: 15,
@@ -146,8 +174,10 @@ let notes = [
         nameIds: {
           treble_clef: 6,
           bass_clef: 1,
+          alto_clef: 7,
+          tenor_clef: 5,
         },
-        inFull: true,
+        inLite: true,
     },
     {
         id: 16,
@@ -156,8 +186,10 @@ let notes = [
         nameIds: {
           treble_clef: 3,
           bass_clef: 5,
+          alto_clef: 4,
+          tenor_clef: 2,
         },
-        inFull: false,
+        inLite: false,
     },
     {
         id: 17,
@@ -166,8 +198,10 @@ let notes = [
         nameIds: {
           treble_clef: 4,
           bass_clef: 6,
+          alto_clef: 5,
+          tenor_clef: 3,
         },
-        inFull: false,
+        inLite: false,
     },
     {
         id: 18,
@@ -176,7 +210,129 @@ let notes = [
         nameIds: {
           treble_clef: 5,
           bass_clef: 7,
+          alto_clef: 6,
+          tenor_clef: 4,
         },
-        inFull: false,
+        inLite: false,
+    },
+    {
+        id: 19,
+        musNotation: "z",
+        orderId: 1,
+        nameIds: {
+          treble_clef: 1,
+          bass_clef: 3,
+          alto_clef: 2,
+          tenor_clef: 7,
+        },
+        inLite: false,
+    },
+    {
+        id: 20,
+        musNotation: "x",
+        orderId: 2,
+        nameIds: {
+          treble_clef: 2,
+          bass_clef: 4,
+          alto_clef: 3,
+          tenor_clef: 1,
+        },
+        inLite: false,
+    },
+    {
+        id: 21,
+        musNotation: "u",
+        orderId: 21,
+        nameIds: {
+          treble_clef: 7,
+          bass_clef: 2,
+          alto_clef: 1,
+          tenor_clef: 6,
+        },
+        inLite: false,
+    },
+    {
+        id: 22,
+        musNotation: "1",
+        orderId: 22,
+        nameIds: {
+          treble_clef: 1,
+          bass_clef: 3,
+          alto_clef: 2,
+          tenor_clef: 7,
+        },
+        inLite: false,
+    },
+    {
+        id: 23,
+        musNotation: "2",
+        orderId: 23,
+        nameIds: {
+          treble_clef: 2,
+          bass_clef: 4,
+          alto_clef: 3,
+          tenor_clef: 1,
+        },
+        inLite: false,
+    },
+    {
+        id: 24,
+        musNotation: "3",
+        orderId: 24,
+        nameIds: {
+          treble_clef: 3,
+          bass_clef: 5,
+          alto_clef: 4,
+          tenor_clef: 2,
+        },
+        inLite: false,
+    },
+    {
+        id: 25,
+        musNotation: "4",
+        orderId: 25,
+        nameIds: {
+          treble_clef: 4,
+          bass_clef: 6,
+          alto_clef: 5,
+          tenor_clef: 3,
+        },
+        inLite: false,
+    },
+    {
+        id: 26,
+        musNotation: "5",
+        orderId: 26,
+        nameIds: {
+          treble_clef: 5,
+          bass_clef: 7,
+          alto_clef: 6,
+          tenor_clef: 4,
+        },
+        inLite: false,
+    },
+    {
+        id: 27,
+        musNotation: "6",
+        orderId: 27,
+        nameIds: {
+          treble_clef: 6,
+          bass_clef: 1,
+          alto_clef: 7,
+          tenor_clef: 5,
+        },
+        inLite: false,
+    },
+    {
+        id: 28,
+        musNotation: "7",
+        orderId: 28,
+        nameIds: {
+          treble_clef: 7,
+          bass_clef: 2,
+          alto_clef: 1,
+          tenor_clef: 6,
+        },
+        inLite: false,
     },
 ];
